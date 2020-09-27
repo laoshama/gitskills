@@ -13,5 +13,14 @@ sad
 本地创建新dev分支并和远程dev分支关联
 
 测试 远程Active branches改变时Your branches是否跟着改变
+<<<<<<< HEAD
 
 本地再次修改
+=======
+已经被他人改变了
+>>>>>>> 083e0d1fad6d614531b83372cc00a1b6531e9c18
+
+
+冲突解决，若git pull也失败了，原因是没有指定本地dev分支与远程origin/dev分支的链接，
+根据提示，设置dev和origin/dev的链接：
+$ git branch --set-upstream-to=origin/dev dev
